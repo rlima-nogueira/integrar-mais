@@ -1,0 +1,180 @@
+header {
+  display: flex;
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+
+  .info-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .descritivos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+        fa-icon {
+          color: #028eb9;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .contato {
+      display: flex;
+      align-items:center;
+      span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        display: flex;
+        align-items:center;
+
+        img {
+          width: 5%;
+          height: auto;
+          margin-right: 0.3rem;
+        }
+        a {
+          text-decoration: none;
+          color: #028eb9;
+        }
+      }
+    }
+  }
+}
+
+.separador {
+  border-bottom: .5px solid #afafaf;
+  margin: 0 0.5rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .box-inicio {
+    background-image: url('/assets/composition-colorful-letters.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100vw;
+    min-height: 60vh;
+    min-width: 100vw;
+    max-height: 60vh;
+
+    .frases {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.5em;
+      width: 100vw;
+
+      span {
+        color: rgb(248,246,231);
+        margin-bottom: 1.3rem;
+
+      }
+      .titulo {
+        font-size: 3em;
+      }
+
+      .subtitulo {
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  .box-informativo {
+    display: flex;
+    min-height: 50vh;
+
+    .lado-esquerdo {
+      background-image: url('/assets/canetas-escola.jpg');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      span {
+        color: rgb(248,246,231);
+        display: block;
+        width: 50%;
+      }
+
+      .titulo {
+        font-size: 1.6em;
+        font-weight: 800;
+      }
+
+      .subtitulo {
+        font-size: 1em;
+        color: black;
+      }
+    }
+
+    .lado-direito {
+      background-image: url('/assets/mother-playing-cubes-with-boy.jpg');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      width: 50vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para telas menores */
+  article {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .box-inicio {
+      background-image: url('/assets/composition-colorful-letters.jpg');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      display: flex;
+      width: 100%;
+      min-height: 40%;
+      min-width: 100%;
+      max-height: 60%;
+
+      .frases {
+        .titulo {
+          font-size: 2em;
+        }
+
+        .subtitulo {
+          display: block;
+          width: 50%;
+          font-size: 1em;
+        }
+      }
+    }
+
+    .box-informativo {
+
+      .lado-esquerdo {
+        span {
+          width: 50vw;
+        }
+      }
+    }
+
+  }
+}
+
